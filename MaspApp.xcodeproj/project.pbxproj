@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		859FCE07251D213700597E37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859FCE05251D213700597E37 /* Main.storyboard */; };
 		859FCE09251D213900597E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859FCE08251D213900597E37 /* Assets.xcassets */; };
 		859FCE0C251D213900597E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859FCE0A251D213900597E37 /* LaunchScreen.storyboard */; };
+		85F082232523BBC700361426 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F082222523BBC700361426 /* Coordinate.swift */; };
+		85F0822D25250A1100361426 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0822C25250A1100361426 /* TrackModel.swift */; };
 		ECD88FD6D2C88058F67166F2 /* Pods_MaspApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344336207FF6B4764CF1D19D /* Pods_MaspApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		859FCE08251D213900597E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		859FCE0B251D213900597E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		859FCE0D251D213900597E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F082222523BBC700361426 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		85F0822C25250A1100361426 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
 		C21E19D48102AB262101F804 /* Pods-MaspApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaspApp.release.xcconfig"; path = "Target Support Files/Pods-MaspApp/Pods-MaspApp.release.xcconfig"; sourceTree = "<group>"; };
 		C7E75703911CA08B3E7D6369 /* Pods-MaspApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaspApp.debug.xcconfig"; path = "Target Support Files/Pods-MaspApp/Pods-MaspApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +52,6 @@
 				C7E75703911CA08B3E7D6369 /* Pods-MaspApp.debug.xcconfig */,
 				C21E19D48102AB262101F804 /* Pods-MaspApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +84,7 @@
 		859FCDFE251D213700597E37 /* MaspApp */ = {
 			isa = PBXGroup;
 			children = (
+				85F082212523ABCE00361426 /* DataBase */,
 				859FCDFF251D213700597E37 /* AppDelegate.swift */,
 				859FCE01251D213700597E37 /* SceneDelegate.swift */,
 				859FCE03251D213700597E37 /* ViewController.swift */,
@@ -90,6 +94,15 @@
 				859FCE0D251D213900597E37 /* Info.plist */,
 			);
 			path = MaspApp;
+			sourceTree = "<group>";
+		};
+		85F082212523ABCE00361426 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				85F082222523BBC700361426 /* Coordinate.swift */,
+				85F0822C25250A1100361426 /* TrackModel.swift */,
+			);
+			path = DataBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +117,7 @@
 				859FCDF9251D213700597E37 /* Frameworks */,
 				859FCDFA251D213700597E37 /* Resources */,
 				28510D6DA2DF8D8DF020718A /* [CP] Copy Pods Resources */,
+				5C53ED52D381CF75A54DB664 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,6 +191,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MaspApp/Pods-MaspApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5C53ED52D381CF75A54DB664 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaspApp/Pods-MaspApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaspApp/Pods-MaspApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MaspApp/Pods-MaspApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C7575A2D339D748C66D68C1E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,6 +240,8 @@
 				859FCE04251D213700597E37 /* ViewController.swift in Sources */,
 				859FCE00251D213700597E37 /* AppDelegate.swift in Sources */,
 				859FCE02251D213700597E37 /* SceneDelegate.swift in Sources */,
+				85F0822D25250A1100361426 /* TrackModel.swift in Sources */,
+				85F082232523BBC700361426 /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
