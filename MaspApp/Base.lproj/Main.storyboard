@@ -38,11 +38,19 @@
                                 </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
-                        <barButtonItem key="rightBarButtonItem" title="Отобразить" id="mdU-iI-ayv">
-                            <connections>
-                                <action selector="displayRoad:" destination="BYZ-38-t0r" id="Svw-QF-AbU"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Выйти" id="TaQ-tA-Voh">
+                                <connections>
+                                    <action selector="exitItemButton:" destination="BYZ-38-t0r" id="Qwe-kf-qNm"/>
+                                    <segue destination="Akc-Vk-55P" kind="show" identifier="toLoginController" id="4gt-Zz-UPp"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Отобразить" id="mdU-iI-ayv">
+                                <connections>
+                                    <action selector="displayRoad:" destination="BYZ-38-t0r" id="Svw-QF-AbU"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="7q7-Sl-fGM" id="ABn-80-N5x"/>
@@ -249,6 +257,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="d7A-Ov-tLX"/>
+        <segue reference="4gt-Zz-UPp"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

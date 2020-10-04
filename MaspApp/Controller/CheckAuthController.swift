@@ -13,15 +13,27 @@ class CheckAuthController: UIViewController {
         super.viewDidLoad()
         
 //        UserDefaults.standard.setValue(false, forKey: "isLogin")
-
-        DispatchQueue.main.async {
-            
-        
+//
+//        DispatchQueue.main.async {
+//            
+//        
+//        if UserDefaults.standard.bool(forKey: "isLogin") {
+//            self.performSegue(withIdentifier: "toMap", sender: self)
+//        } else {
+//            self.performSegue(withIdentifier: "toLogin", sender: self)
+//        }
+//        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
         if UserDefaults.standard.bool(forKey: "isLogin") {
             self.performSegue(withIdentifier: "toMap", sender: self)
         } else {
             self.performSegue(withIdentifier: "toLogin", sender: self)
         }
-        }
     }
+    
+    
+    
 }

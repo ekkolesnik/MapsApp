@@ -82,6 +82,7 @@ class LoginController: UIViewController {
         if login != realmLogin || pass != realmPass || login == ""  {
             showAuthError()
         } else {
+            UserDefaults.standard.setValue(true, forKey: "isLogin")
             performSegue(withIdentifier: "enterSegua", sender: AnyObject.self)
         }
     }
