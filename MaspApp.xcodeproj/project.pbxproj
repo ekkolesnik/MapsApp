@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8506931A2528D49D005FB43A /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850693192528D49D005FB43A /* RegistrationController.swift */; };
+		8506931D2528D934005FB43A /* CheckAuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8506931C2528D934005FB43A /* CheckAuthController.swift */; };
+		850693202528DDE1005FB43A /* RootSegue​.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8506931F2528DDE1005FB43A /* RootSegue​.swift */; };
 		859FCE00251D213700597E37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859FCDFF251D213700597E37 /* AppDelegate.swift */; };
 		859FCE02251D213700597E37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859FCE01251D213700597E37 /* SceneDelegate.swift */; };
 		859FCE04251D213700597E37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859FCE03251D213700597E37 /* ViewController.swift */; };
@@ -15,11 +18,16 @@
 		859FCE0C251D213900597E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859FCE0A251D213900597E37 /* LaunchScreen.storyboard */; };
 		85F082232523BBC700361426 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F082222523BBC700361426 /* Coordinate.swift */; };
 		85F0822D25250A1100361426 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0822C25250A1100361426 /* TrackModel.swift */; };
+		85F082402527445F00361426 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0823F2527445F00361426 /* User.swift */; };
+		85F0824F2527B18A00361426 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F0824E2527B18A00361426 /* LoginController.swift */; };
 		ECD88FD6D2C88058F67166F2 /* Pods_MaspApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344336207FF6B4764CF1D19D /* Pods_MaspApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		344336207FF6B4764CF1D19D /* Pods_MaspApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaspApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		850693192528D49D005FB43A /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		8506931C2528D934005FB43A /* CheckAuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAuthController.swift; sourceTree = "<group>"; };
+		8506931F2528DDE1005FB43A /* RootSegue​.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootSegue​.swift"; sourceTree = "<group>"; };
 		859FCDFC251D213700597E37 /* MaspApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaspApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859FCDFF251D213700597E37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859FCE01251D213700597E37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +38,8 @@
 		859FCE0D251D213900597E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85F082222523BBC700361426 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		85F0822C25250A1100361426 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		85F0823F2527445F00361426 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		85F0824E2527B18A00361426 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		C21E19D48102AB262101F804 /* Pods-MaspApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaspApp.release.xcconfig"; path = "Target Support Files/Pods-MaspApp/Pods-MaspApp.release.xcconfig"; sourceTree = "<group>"; };
 		C7E75703911CA08B3E7D6369 /* Pods-MaspApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaspApp.debug.xcconfig"; path = "Target Support Files/Pods-MaspApp/Pods-MaspApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,10 +94,11 @@
 		859FCDFE251D213700597E37 /* MaspApp */ = {
 			isa = PBXGroup;
 			children = (
-				85F082212523ABCE00361426 /* DataBase */,
 				859FCDFF251D213700597E37 /* AppDelegate.swift */,
 				859FCE01251D213700597E37 /* SceneDelegate.swift */,
-				859FCE03251D213700597E37 /* ViewController.swift */,
+				85F082492527B13000361426 /* Controller */,
+				85F0823E2527440900361426 /* Model */,
+				85F082212523ABCE00361426 /* DataBase */,
 				859FCE05251D213700597E37 /* Main.storyboard */,
 				859FCE08251D213900597E37 /* Assets.xcassets */,
 				859FCE0A251D213900597E37 /* LaunchScreen.storyboard */,
@@ -103,6 +114,26 @@
 				85F0822C25250A1100361426 /* TrackModel.swift */,
 			);
 			path = DataBase;
+			sourceTree = "<group>";
+		};
+		85F0823E2527440900361426 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85F0823F2527445F00361426 /* User.swift */,
+				8506931F2528DDE1005FB43A /* RootSegue​.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85F082492527B13000361426 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85F0824E2527B18A00361426 /* LoginController.swift */,
+				859FCE03251D213700597E37 /* ViewController.swift */,
+				850693192528D49D005FB43A /* RegistrationController.swift */,
+				8506931C2528D934005FB43A /* CheckAuthController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,9 +270,14 @@
 			files = (
 				859FCE04251D213700597E37 /* ViewController.swift in Sources */,
 				859FCE00251D213700597E37 /* AppDelegate.swift in Sources */,
+				85F082402527445F00361426 /* User.swift in Sources */,
 				859FCE02251D213700597E37 /* SceneDelegate.swift in Sources */,
 				85F0822D25250A1100361426 /* TrackModel.swift in Sources */,
+				850693202528DDE1005FB43A /* RootSegue​.swift in Sources */,
+				8506931D2528D934005FB43A /* CheckAuthController.swift in Sources */,
 				85F082232523BBC700361426 /* Coordinate.swift in Sources */,
+				8506931A2528D49D005FB43A /* RegistrationController.swift in Sources */,
+				85F0824F2527B18A00361426 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
