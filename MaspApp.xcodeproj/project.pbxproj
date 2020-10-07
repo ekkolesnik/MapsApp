@@ -10,6 +10,7 @@
 		8506931A2528D49D005FB43A /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850693192528D49D005FB43A /* RegistrationController.swift */; };
 		8506931D2528D934005FB43A /* CheckAuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8506931C2528D934005FB43A /* CheckAuthController.swift */; };
 		850693202528DDE1005FB43A /* RootSegue​.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8506931F2528DDE1005FB43A /* RootSegue​.swift */; };
+		8570D20D252A420E00987A7D /* PrivacyProtectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8570D20C252A420E00987A7D /* PrivacyProtectionController.swift */; };
 		859FCE00251D213700597E37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859FCDFF251D213700597E37 /* AppDelegate.swift */; };
 		859FCE02251D213700597E37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859FCE01251D213700597E37 /* SceneDelegate.swift */; };
 		859FCE04251D213700597E37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859FCE03251D213700597E37 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		850693192528D49D005FB43A /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		8506931C2528D934005FB43A /* CheckAuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAuthController.swift; sourceTree = "<group>"; };
 		8506931F2528DDE1005FB43A /* RootSegue​.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootSegue​.swift"; sourceTree = "<group>"; };
+		8570D20C252A420E00987A7D /* PrivacyProtectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyProtectionController.swift; sourceTree = "<group>"; };
 		859FCDFC251D213700597E37 /* MaspApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaspApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859FCDFF251D213700597E37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859FCE01251D213700597E37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				859FCE03251D213700597E37 /* ViewController.swift */,
 				850693192528D49D005FB43A /* RegistrationController.swift */,
 				8506931C2528D934005FB43A /* CheckAuthController.swift */,
+				8570D20C252A420E00987A7D /* PrivacyProtectionController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				850693202528DDE1005FB43A /* RootSegue​.swift in Sources */,
 				8506931D2528D934005FB43A /* CheckAuthController.swift in Sources */,
 				85F082232523BBC700361426 /* Coordinate.swift in Sources */,
+				8570D20D252A420E00987A7D /* PrivacyProtectionController.swift in Sources */,
 				8506931A2528D49D005FB43A /* RegistrationController.swift in Sources */,
 				85F0824F2527B18A00361426 /* LoginController.swift in Sources */,
 			);
